@@ -1,8 +1,8 @@
 @use './functions' as *;
 
-// === Breakpoints (в px) ===
 $desktop: 1440;
 $laptop: 1024;
+$tablet-l: 980;
 $tablet: 768;
 $mobile-s: 480;
 
@@ -29,6 +29,13 @@ $mobile-s: 480;
     @content;
   }
 }
+
+@mixin tablet-l {
+  @media (max-width: rem($tablet-l - 1)) {
+    @content;
+  }
+}
+
 
 @mixin tablet {
   @media (max-width: rem($tablet - 1)) {
