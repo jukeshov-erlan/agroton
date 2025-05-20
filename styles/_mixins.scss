@@ -1,0 +1,5 @@
+@use 'functions' as *;
+
+@mixin font-size($max, $min) {
+  font-size: fluid($max, $min);
+}

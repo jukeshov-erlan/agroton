@@ -1,0 +1,55 @@
+@use './functions' as *;
+
+// === Breakpoints (в px) ===
+$desktop: 1440;
+$laptop: 1024;
+$tablet: 768;
+$mobile-s: 480;
+
+@mixin desktop {
+  @media (max-width: rem($desktop - 1)) {
+    @content;
+  }
+}
+
+@mixin desktop-above {
+  @media (min-width: rem($desktop)) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: rem($laptop - 1)) {
+    @content;
+  }
+}
+
+@mixin laptop-above {
+  @media (min-width: rem($laptop)) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: rem($tablet - 1)) {
+    @content;
+  }
+}
+
+@mixin tablet-above {
+  @media (min-width: rem($tablet)) {
+    @content;
+  }
+}
+
+@mixin mobile-s {
+  @media (max-width: rem($mobile-s - 1)) {
+    @content;
+  }
+}
+
+@mixin mobile-s-above {
+  @media (min-width: rem($mobile-s)) {
+    @content;
+  }
+}

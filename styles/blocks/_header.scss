@@ -1,0 +1,32 @@
+@use '../functions' as *;
+
+.header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    padding-block: rem(30);
+  }
+
+  &__contact-us {
+    display: inline-block;
+    padding: rem(10) rem(40);
+    border-radius: 50px;
+    text-transform: uppercase;
+
+    background-color: var(--color-base-dark);
+    color: var(--color-base-light);
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    column-gap: rem(30);
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+}

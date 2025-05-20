@@ -1,1 +1,12 @@
 @use 'normalize';
+@use 'globals';
+@use 'variables';
+@use 'fonts';
+
+@use 'mixins';
+@use 'functions';
+@use 'media';
+
+
+
+@use 'blocks/header';

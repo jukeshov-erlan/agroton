@@ -1,0 +1,18 @@
+@use 'mixins' as *;
+@use 'functions' as *;
+
+
+body {
+  @include font-size(16, 14);
+
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  background-color: var(--background-color-base);
+  color: var(--color-dark);
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 rem(10);
+  margin: 0 auto;
+}

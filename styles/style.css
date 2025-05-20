@@ -66,5 +66,90 @@ select {
     scroll-behavior: auto !important;
   }
 }
+body {
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  background-color: var(--background-color-base);
+  color: var(--color-dark);
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 0.625rem;
+  margin: 0 auto;
+}
+
+:root {
+  --color-base-dark: #0e0d0d;
+  --color-base-light: #fff;
+  --color-accent-light: #FDFDF0;
+  --color-accent-dark: #000;
+  --color-accent-yellow: #F2A531;
+  --color-blog-dark: #101828;
+  --color-blog-light: #667085;
+  --background-color-base: #FDFDF0;
+  --background-color-light: #F4F4E7;
+  --container-width: 88.75rem;
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  padding-block: 1.875rem;
+}
+.header__contact-us {
+  display: inline-block;
+  padding: 0.625rem 2.5rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: var(--color-base-dark);
+  color: var(--color-base-light);
+}
+
+.menu__list {
+  display: flex;
+  column-gap: 1.875rem;
+}
+.menu__link {
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=style.css.map */
