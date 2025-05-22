@@ -6,6 +6,8 @@
   --color-accent-light: #FDFDF0;
   --color-accent-dark: #000;
   --color-accent-yellow: #F2A531;
+  --color-accent-green: #284316;
+  
   --color-blog-dark: #101828;
   --color-blog-light: #667085;
 
@@ -13,4 +15,9 @@
   --background-color-light: #F4F4E7;
 
   --container-width: #{rem(1420)};
+  --container-big-width: #{rem(1820)};
+
+  --font-family-base: 'Nunito Sans', sans-serif;
+  --font-family-accent: 'Work Sans', sans-serif;
+
 }

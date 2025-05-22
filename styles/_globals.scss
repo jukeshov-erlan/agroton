@@ -5,10 +5,11 @@
 body {
   @include font-size(16, 14);
 
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: var(--font-family-base);
   font-weight: 400;
+  line-height: 1.35;
   background-color: var(--background-color-base);
-  color: var(--color-dark);
+  color: var(--color-base-dark);
 }
 
 .container {
@@ -16,3 +17,18 @@ body {
   padding: 0 rem(10);
   margin: 0 auto;
 }
+
+.container-big {
+  max-width: var(--container-big-width);
+  padding: 0 rem(10);
+  margin: 0 auto;
+}
+
+.header {
+  display: none;
+}
+
+.text-yellow {
+  color: var(--color-accent-yellow)
+}
+
