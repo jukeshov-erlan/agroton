@@ -1,0 +1,120 @@
+@use "../functions" as *;
+@use "../media" as *;
+
+.products {
+  .container-big {
+    background-color: var(--background-color-light);
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: rem(98);
+    align-items: center;
+
+    @include tablet-m {
+      padding-top: rem(50);
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family-accent);
+    font-weight: 500;
+    font-size: fluid(40, 20);
+    text-align: center;
+
+    text-transform: uppercase;
+    margin-bottom: rem(40);
+
+    @include tablet-m {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(16);
+    margin-bottom: rem(35);
+
+    @include laptop-l {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include tablet-s {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &:nth-child(odd) {
+      color: var(--color-base-light);
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(14);
+    min-height: rem(322);
+    padding: rem(50) rem(24);
+    border-radius: rem(10);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__inner-title {
+    position: relative;
+    font-family: var(--font-family-accent);
+    font-weight: 400;
+    font-size: fluid(32, 18);
+    line-height: 1.1;
+    padding-left: rem(45);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: rem(30);
+      height: rem(30);
+    }
+  }
+
+  .cereal::before {
+    background-image: url("../../img/crops.png");
+  }
+  .sunflower::before {
+    background-image: url("../../img/sunflower.png");
+  }
+  .milk::before {
+    background-image: url("../../img/glass-of-milk.png");
+  }
+  .bread::before {
+    background-image: url("../../img/bread.png");
+  }
+  .chicken::before {
+    background-image: url("../../img/chicken.png");
+  }
+  .apple::before {
+    background-image: url("../../img/green-apple.png");
+  }
+
+  &__inner-text {
+    font-weight: 300;
+    font-size: fluid(16, 14);
+  }
+
+  &__inner-btn {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    border: none;
+    background-color: transparent;
+  }
+}

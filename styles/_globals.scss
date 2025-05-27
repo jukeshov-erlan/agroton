@@ -1,6 +1,6 @@
-@use 'mixins' as *;
-@use 'functions' as *;
-
+@use "mixins" as *;
+@use "functions" as *;
+@use "media" as *;
 
 body {
   @include font-size(16, 14);
@@ -13,22 +13,50 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: var(--container-width);
   padding: 0 rem(10);
   margin: 0 auto;
 }
 
 .container-big {
+  width: 100%;
   max-width: var(--container-big-width);
   padding: 0 rem(10);
   margin: 0 auto;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
-.header {
-  display: none;
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-accent-dark);
+  color: var(--color-accent-light);
+  border-radius: rem(96);
+  font-size: fluid(16, 14);
+  text-transform: uppercase;
+  padding: rem(19) rem(92) rem(19) rem(38); // справа — место под иконку
+  min-height: rem(60);
+  min-width: rem(242);
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: rem(54);
+    height: rem(54);
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url('../img/arrow-top-right.svg') no-repeat center / contain;
+    pointer-events: none;
+  }
 }
 
 .text-yellow {
-  color: var(--color-accent-yellow)
+  color: var(--color-accent-yellow);
 }
-

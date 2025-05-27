@@ -8,6 +8,14 @@
     justify-content: space-between;
     font-weight: 500;
     padding-block: rem(30);
+
+    @include tablet-s {
+      padding-bottom: rem(15);
+    }
+
+    @include mobile {
+      padding-block: rem(10);
+    }
   }
 
   &__contact-us {

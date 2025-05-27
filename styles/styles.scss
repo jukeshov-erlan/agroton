@@ -11,3 +11,9 @@
 
 @use 'blocks/header';
 @use 'blocks/hero';
+@use 'blocks/products';
+
+.header,
+.hero {
+  // display: none;
+}
