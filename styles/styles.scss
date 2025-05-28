@@ -12,8 +12,12 @@
 @use 'blocks/header';
 @use 'blocks/hero';
 @use 'blocks/products';
+@use 'blocks/quality';
+
 
 .header,
-.hero {
+.hero,
+.products
+ {
   // display: none;
 }

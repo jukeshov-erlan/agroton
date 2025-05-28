@@ -41,8 +41,6 @@ body {
   font-size: fluid(16, 14);
   text-transform: uppercase;
   padding: rem(19) rem(92) rem(19) rem(38); // справа — место под иконку
-  min-height: rem(60);
-  min-width: rem(242);
 
   &::after {
     content: '';
@@ -53,7 +51,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
     background: url('../img/arrow-top-right.svg') no-repeat center / contain;
-    pointer-events: none;
   }
 }
 

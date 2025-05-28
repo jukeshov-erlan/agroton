@@ -105,8 +105,6 @@ body {
   font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   text-transform: uppercase;
   padding: 1.1875rem 5.75rem 1.1875rem 2.375rem;
-  min-height: 3.75rem;
-  min-width: 15.125rem;
 }
 .btn::after {
   content: "";
@@ -117,7 +115,6 @@ body {
   top: 50%;
   transform: translateY(-50%);
   background: url("../img/arrow-top-right.svg") no-repeat center/contain;
-  pointer-events: none;
 }
 
 .text-yellow {
@@ -662,6 +659,186 @@ body {
   left: -10px;
   border: none;
   background-color: transparent;
+}
+
+.quality {
+  position: relative;
+  padding-block: 10.1875rem 9.375rem;
+}
+@media (max-width: 67.75rem) {
+  .quality {
+    padding-block: 6.25rem;
+  }
+}
+@media (max-width: 42.125rem) {
+  .quality {
+    padding-block: 3.125rem;
+  }
+}
+.quality__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+}
+.quality__text {
+  font-family: var(--font-family-accent);
+  font-weight: 500;
+  font-size: clamp(1.125rem, 0.85rem + 1.375vw, 2.5rem);
+  color: var(--color-accent-dark);
+}
+.quality__title {
+  font-family: var(--font-family-accent);
+  font-weight: 600;
+  font-size: clamp(3.75rem, 0.75rem + 15vw, 18.75rem);
+  line-height: 0.8;
+  color: var(--color-accent-yellow);
+}
+.quality__img {
+  position: relative;
+  bottom: clamp(1.25rem, 0rem + 6.25vw, 7.5rem);
+  width: 100%;
+  padding-bottom: 8.125rem;
+}
+@media (max-width: 72.4375rem) {
+  .quality__img {
+    padding-bottom: 3.125rem;
+  }
+}
+@media (max-width: 61.1875rem) {
+  .quality__img {
+    padding-bottom: 0;
+  }
+}
+.quality__bottom {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 7.5rem;
+  min-height: 30.8125rem;
+}
+@media (max-width: 89.9375rem) {
+  .quality__bottom {
+    column-gap: 1.25rem;
+  }
+}
+@media (max-width: 64.625rem) {
+  .quality__bottom {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2.5rem;
+  }
+}
+.quality__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 36.25rem;
+  width: 100%;
+}
+@media (max-width: 72.4375rem) {
+  .quality__description {
+    max-width: 25rem;
+  }
+}
+@media (max-width: 64.625rem) {
+  .quality__description {
+    max-width: 36.25rem;
+  }
+}
+.quality__description-title {
+  font-family: var(--font-family-accent);
+  font-weight: 400;
+  font-size: clamp(1.375rem, 1.15rem + 1.125vw, 2.5rem);
+}
+.quality__description-bottom-text {
+  font-weight: 300;
+  font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
+  margin-bottom: 1.25rem;
+}
+.quality__advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 0.9375rem;
+  max-width: 45.25rem;
+  width: 100%;
+}
+.quality__advantages-top {
+  display: flex;
+  background-color: var(--background-color-light);
+  border-radius: 0.625rem;
+  width: 100%;
+}
+@media (max-width: 42.125rem) {
+  .quality__advantages-top {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.quality__advantages-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.875rem 1.25rem;
+}
+@media (max-width: 42.125rem) {
+  .quality__advantages-info {
+    align-items: center;
+    row-gap: 1.875rem;
+  }
+}
+.quality__advantages-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9375rem;
+}
+.quality__advantages-link {
+  position: relative;
+  font-size: 1rem;
+  padding-left: 1.875rem;
+  display: inline-block;
+}
+.quality__advantages-link span {
+  font-weight: 600;
+  color: var(--color-accent-yellow);
+}
+.quality__advantages-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url("../../img/arrow-top-right-list.svg") no-repeat center/cover;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.quality__advantages-img {
+  width: 21.25rem;
+  flex-shrink: 0;
+  aspect-ratio: 340/364;
+  object-fit: cover;
+}
+.quality__advantages-text {
+  padding: 1.875rem 11.375rem 1.875rem 1.875rem;
+  border-radius: 0.625rem;
+  background-color: #0d1615;
+  color: var(--color-accent-light);
+}
+@media (max-width: 42.125rem) {
+  .quality__advantages-text {
+    padding-right: 1.875rem;
+  }
+}
+@media (max-width: 32.4375rem) {
+  .quality__advantages-text {
+    padding: 0.625rem;
+  }
+}
+.quality__advantages-text span {
+  color: var(--color-accent-yellow);
 }
 
 /*# sourceMappingURL=style.css.map */
