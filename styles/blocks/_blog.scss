@@ -1,0 +1,129 @@
+@use "../functions" as *;
+@use "../media" as *;
+
+.blog {
+  &__wrapper {
+    padding-block: rem(100);
+    background-color: var(--background-color-light);
+
+    @include tablet-m {
+      padding-block: rem(50);
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family-accent);
+    font-weight: 500;
+    font-size: fluid(40, 22);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: rem(40);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: rem(44);
+
+    @include desktop-s {
+      column-gap: rem(20);
+    }
+
+    @include laptop-l {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: rem(32);
+      // place-items: center;
+      justify-items: center;
+      // align-items: center;
+      // align-content: center;
+      // justify-content: center;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    max-width: rem(580);
+    height: auto;
+    width: 100%;
+
+    @include desktop-s {
+      max-width: rem(500);
+    }
+
+    &-img {
+      margin-bottom: rem(32);
+    }
+
+    @include desktop-s {
+      &-content {
+        margin-top: auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(32);
+
+    &-top,
+    &-bottom {
+      display: flex;
+      column-gap: rem(24);
+      align-items: center;
+      max-width: rem(796);
+
+      @include mobile-l {
+        display: flex;
+        flex-direction: column;
+        column-gap: 1.5rem;
+        align-items: start;
+        max-width: 49.75rem;
+        row-gap: 16px;
+      }
+    }
+
+    &-content {
+      max-width: rem(452);
+    }
+  }
+
+  &__date {
+    font-weight: 600;
+    font-size: rem(14);
+    line-height: 1.4;
+    color: var(--color-accent-yellow);
+    margin-bottom: rem(12);
+  }
+
+  &__h3-title {
+    position: relative;
+    font-family: var(--font-family-accent);
+    font-weight: 500;
+    font-size: fluid(24, 16);
+    color: var(--color-blog-dark);
+    margin-block: rem(12) rem(8);
+    padding-right: rem(24);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background: url("../../img/arrow-up-right.svg");
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: fluid(16, 14);
+    margin-right: rem(24);
+    color: var(--color-blog-light);
+  }
+}

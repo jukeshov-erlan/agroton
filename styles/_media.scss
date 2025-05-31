@@ -1,6 +1,7 @@
 @use './functions' as *;
 
 $desktop: 1440;
+$desktop-s: 1350;
 $laptop-l: 1160; 
 $laptop: 1085;
 $laptop-m: 1035;
@@ -18,6 +19,13 @@ $mobile-s: 480;
     @content;
   }
 }
+
+@mixin desktop-s {
+  @media (max-width: rem($desktop-s - 1)) {
+    @content;
+  }
+}
+
 
 @mixin desktop-above {
   @media (min-width: rem($desktop)) {

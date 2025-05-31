@@ -13,11 +13,14 @@
 @use 'blocks/hero';
 @use 'blocks/products';
 @use 'blocks/quality';
+@use 'blocks/blog';
+
 
 
 .header,
 .hero,
-.products
+.products,
+.quality
  {
   // display: none;
 }
