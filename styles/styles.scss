@@ -15,14 +15,3 @@
 @use 'blocks/quality';
 @use 'blocks/blog';
 @use 'blocks/footer';
-
-
-
-
-.header,
-.hero,
-.products,
-.quality
- {
-  display: none;
-}

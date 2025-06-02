@@ -15,7 +15,6 @@ body {
 .container {
   width: 100%;
   max-width: var(--container-width);
-  // padding: 0 rem(10);
   margin: 0 auto;
 }
 
@@ -40,7 +39,7 @@ body {
   border-radius: rem(96);
   font-size: fluid(16, 14);
   text-transform: uppercase;
-  padding: rem(19) rem(92) rem(19) rem(38); // справа — место под иконку
+  padding: rem(19) rem(92) rem(19) rem(38);
 
   &::after {
     content: '';

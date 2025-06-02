@@ -33,11 +33,7 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       row-gap: rem(32);
-      // place-items: center;
       justify-items: center;
-      // align-items: center;
-      // align-content: center;
-      // justify-content: center;
     }
   }
 
@@ -116,7 +112,7 @@
       transform: translateY(-50%);
       width: 24px;
       height: 24px;
-      background: url("../../img/arrow-up-right.svg");
+      background: url("../img/arrow-up-right.svg");
     }
   }
 

@@ -286,7 +286,7 @@ body {
   font-family: var(--font-family-accent);
   text-align: center;
   text-transform: uppercase;
-  background: url("../../img/bg-img.jpg") center/cover no-repeat;
+  background: url("../img/bg-img.jpg") center/cover no-repeat;
   color: var(--color-accent-light);
 }
 @media (max-width: 31.1875rem) {
@@ -635,22 +635,22 @@ body {
   height: 1.875rem;
 }
 .products .cereal::before {
-  background-image: url("../../img/crops.png");
+  background-image: url("../img/crops.png");
 }
 .products .sunflower::before {
-  background-image: url("../../img/sunflower.png");
+  background-image: url("../img/sunflower.png");
 }
 .products .milk::before {
-  background-image: url("../../img/glass-of-milk.png");
+  background-image: url("../img/glass-of-milk.png");
 }
 .products .bread::before {
-  background-image: url("../../img/bread.png");
+  background-image: url("../img/bread.png");
 }
 .products .chicken::before {
-  background-image: url("../../img/chicken.png");
+  background-image: url("../img/chicken.png");
 }
 .products .apple::before {
-  background-image: url("../../img/green-apple.png");
+  background-image: url("../img/green-apple.png");
 }
 .products__inner-text {
   font-weight: 300;
@@ -814,7 +814,7 @@ body {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  background: url("../../img/arrow-top-right-list.svg") no-repeat center/cover;
+  background: url("../img/arrow-top-right-list.svg") no-repeat center/cover;
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -948,7 +948,7 @@ body {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background: url("../../img/arrow-up-right.svg");
+  background: url("../img/arrow-up-right.svg");
 }
 .blog__text {
   font-weight: 400;
@@ -1031,13 +1031,6 @@ body {
     align-items: center;
     row-gap: 0.9375rem;
   }
-}
-
-.header,
-.hero,
-.products,
-.quality {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
